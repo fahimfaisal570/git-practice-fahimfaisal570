@@ -12,3 +12,10 @@ def multiply(a, b):
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         return "Error: arguments must be numbers"
     return a * b
+
+def divide(a, b):
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        return "Error: arguments must be numbers"
+    if b == 0:
+        return "Error: Cannot divide by zero"
+    return a / b
